@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cart • Nathkunj Agri Mall</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="cart">
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">NA</div>
+      <div>
+        <div class="brand-title">Nathkunj Agri Mall</div>
+        <div class="tagline">From Farmer to Customer</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="farmers.html">Farmers</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </div>
+</header>
+<main class="section">
+  <div class="container">
+    <h2>Your Cart</h2>
+    <table id="cartTable" class="table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price (₹)</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="cartBody"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Grand Total</td>
+          <td id="grandTotal">₹ 0</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="notice" style="margin-top:12px">Frontend only demo</div>
+    <section class="section" style="padding-top:16px">
+      <h2>Checkout</h2>
+      <div class="form" id="checkoutSection">
+        <div class="form-row">
+          <label><input type="radio" name="payment" value="COD" checked> Cash on Delivery (COD)</label>
+          <label><input type="radio" name="payment" value="UPI"> UPI</label>
+        </div>
+        <div class="form-row">
+          <label><input type="radio" name="payment" value="Card"> Card</label>
+        </div>
+        <div id="upiFields" class="form hidden">
+          <input class="input" id="upiId" placeholder="UPI ID (e.g. name@bank)">
+        </div>
+        <div id="cardFields" class="form hidden">
+          <input class="input" id="cardName" placeholder="Name on card">
+          <input class="input" id="cardNumber" placeholder="Card number">
+          <div class="form-row">
+            <input class="input" id="cardExpiry" placeholder="MM/YY">
+            <input class="input" id="cardCvv" placeholder="CVV">
+          </div>
+        </div>
+        <button id="placeOrderBtn" class="btn">Place Order</button>
+      </div>
+    </section>
+  </div>
+  </main>
+<footer>
+  <div class="container footer-inner">
+    <div>Nathkunj Agri Mall</div>
+    <div>© 2025</div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>

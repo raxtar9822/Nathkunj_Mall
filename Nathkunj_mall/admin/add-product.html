@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Add Product • Admin</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-page="admin-add-product">
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">NA</div>
+      <div>
+        <div class="brand-title">Admin</div>
+        <div class="tagline">Back Office</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="add-product.html">Add Product</a>
+      <a href="manage-products.html">Manage Products</a>
+      <a href="manage-orders.html">Manage Orders</a>
+      <a href="manage-users.html">Manage Users</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </div>
+</header>
+<main class="section">
+  <div class="container" style="max-width:680px">
+    <h2>Add New Vegetable</h2>
+    <form id="adminAddProduct" class="form">
+      <div class="form-row">
+        <input class="input" name="name" placeholder="Name">
+        <select class="input" name="category">
+          <option value="Leafy">Leafy</option>
+          <option value="Root">Root</option>
+          <option value="Seasonal">Seasonal</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <input class="input" name="price" type="number" placeholder="Price (₹/kg)">
+        <input class="input" name="stock" type="number" placeholder="Stock (kg)">
+      </div>
+      <input class="input" name="image" type="file" accept="image/*">
+      <button class="btn" type="submit">Add Product</button>
+    </form>
+  </div>
+</main>
+<footer>
+  <div class="container footer-inner">
+    <div>Nathkunj Agri Mall • Admin</div>
+    <div>© 2025</div>
+  </div>
+</footer>
+<script src="../assets/script.js"></script>
+</body>
+</html>
